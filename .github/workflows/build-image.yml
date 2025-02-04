@@ -26,7 +26,7 @@ jobs:
     # Build, tag, and push Docker image for Patient Service
     - name: Build, Tag & Push Docker Image for helloworld
       run: |
-        cd App/appointment/
+        cd App/Appointment/
         docker build -t lamda .
         docker tag lamda:latest ${{ secrets.lamda_ecr_url }}:latest
         docker push ${{ secrets.lamda_ecr_url }}:latest
