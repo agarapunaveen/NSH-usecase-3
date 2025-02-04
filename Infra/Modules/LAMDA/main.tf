@@ -45,7 +45,7 @@
 
 # Lambda Function
 resource "aws_lambda_function" "my_lambda" {
-  function_name = "appointment-function"
+  function_name = "appointments-function"
   role          = var.lambda_role_arn
   image_uri     = "010928202531.dkr.ecr.us-east-1.amazonaws.com/lamda:latest"
   package_type  = "Image"
